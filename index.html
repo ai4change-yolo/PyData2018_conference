@@ -22,6 +22,7 @@
 		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
 		document.getElementsByTagName('head')[0].appendChild(link);
 
+
     </script>
 </head>
 
@@ -31,7 +32,7 @@
     <div class="slides">
         <section>
             <h2>The smart shopping basket</h2>
-                <h4>A Case Study with deep learning, Intel Movidius and AWS</h4>
+            <h4>A Case Study with deep learning, Intel Movidius and AWS</h4>
         </section>
         <!-- Introduction - online vs offline retailers-->
         <section>
@@ -446,6 +447,30 @@
                 </div>
             </div>
         </section>
+        <section data-background="#FFFFFF">
+            <h3>Future Work</h3>
+            <ul>
+                <li>
+                    <div class="small">
+                        <p class="fragment">Training YOLO with more different products
+                        <p>
+                    </div>
+                </li>
+                <li>
+                    <div class="small">
+                        <p class="fragment">Rebuilding and improving the recommendation algorithm
+                        <p>
+                    </div>
+                </li>
+                <li>
+                    <div class="small">
+                        <p class="fragment">Handling many baskets by AWS backend
+                        <p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
     </div>
 
     <script src="lib/js/head.min.js"></script>
@@ -475,6 +500,7 @@
 					}
 				]
 			});
+
 
     </script>
 </div>
