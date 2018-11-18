@@ -124,120 +124,47 @@
 			</section>
 			<section data-transition="none">
 				<h3>How does the YOLO work?</h3>
-					<div>
-						<div class="leftContent2">
-							<img width="420" height="420" data-src="img/products_grid.jpg">
-						</div>
-						<div class="rightContent2">
-							<p>Each cell also predicts a probability of belonging to a given class</p>
-						</div>
-					</div>
-			</section>
-			<section data-transition="none">
-				<h3>How does the YOLO work?</h3>
-					<div>
-						<div class="leftContent2">
-							 <img width="420" height="420" data-src="img/products_boundes.jpg">
-
-						</div>
-						<div class="rightContent2">
-						<img width="420" height="420" data-src="img/products_grid_color.jpg">						</div>
-					</div>
-			</section>
-			<section data-transition="none">
-				<h3>How does the YOLO work?</h3>
-					<div>
-						<div class="leftContent2">
-							<img width="420" height="420" data-src="img/products_boundes_color.jpg">
-						</div>
-						<div class="rightContent2">
-							<p>Then we multiply anchor boxes times class predictions</p>
-						</div>
-					</div>
-			</section>
-			<section data-transition="none">
-				<h3>How does the YOLO work?</h3>
-					<div>
-						<div class="leftContent2">
-							<img width="420" height="420" data-src="img/products_result_color.jpg">
-						</div>
-						<div class="rightContent2">
-							<p>In the last step, the threshold is applied</p>
-						</div>
-					</div>
-			</section>
-			<section data-background="#FFFFFF">
-				<h3>Why Spark?</h3>
 				<div>
 					<div class="leftContent2">
-						<img width="190" height="110" data-src="img/spark.png">
+						<img width="420" height="420" data-src="img/products_grid.jpg">
 					</div>
 					<div class="rightContent2">
-						<p align="left" class="fragment">Readability</p>
-						<p align="left" class="fragment">Fast</p>
-						<p align="left" class="fragment">Testability</p>
-						<p align="left" class="fragment">Interactive</p>
-						<p align="left" class="fragment">Standardization</p>
+						<p>Each cell also predicts a probability of belonging to a given class</p>
 					</div>
 				</div>
 			</section>
-			<section data-background="#ffffff">
+			<section data-transition="none">
+				<h3>How does the YOLO work?</h3>
 				<div>
-					<div class="leftContent3">
-						<img width="300" height="100" data-src="img/hadoop.png">
+					<div class="leftContent2">
+						<img width="420" height="420" data-src="img/products_boundes.jpg">
 					</div>
-					<div class="centerContent3">
-						<div><img class="fragment" width="150" height="100" data-src="img/storm.png"></div>
-						<div><img class="fragment" width="70" height="70" data-src="img/hive.png"></div>
-						<div><img class="fragment" width="150" height="80" data-src="img/drill.jpeg"></div>
-						<div><img class="fragment" width="150" height="80" data-src="img/impala.png"></div>
-						<div><img class="fragment" width="150" height="66" data-src="img/scalding.png"></div>
-						<div><img class="fragment" width="90" height="90" data-src="img/giraph.png"></div>
-					</div>
-					<div class="rightContent3">
-						<img class="fragment" width="280" height="110" data-src="img/spark.png">
+					<div class="rightContent2">
+						<img width="420" height="420" data-src="img/products_grid_color.jpg">
 					</div>
 				</div>
 			</section>
-
-			<section data-background="#ffffff">
-				<img width="1000" height="540" data-src="img/line_of_codes.png">
+			<section data-transition="none">
+				<h3>How does the YOLO work?</h3>
+				<div>
+					<div class="leftContent2">
+						<img width="420" height="420" data-src="img/products_boundes_color.jpg">
+					</div>
+					<div class="rightContent2">
+						<p>Then we multiply anchor boxes times class predictions</p>
+					</div>
+				</div>
 			</section>
-			<section data-background="#ffffff">
-				<h3>Spark high level architecture</h3>
-				<img width="1000" height="300" data-src="img/spark_arch.png">
-			</section>
-
-			<section>
-				<h3>Spark Context</h3>
-				<pre><code class="hljs" data-trim contenteditable>
-            import org.apache.spark.SparkContext
-            import org.apache.spark.SparkContext._
-            import org.apache.spark.SparkConf
-
-            object SimpleApp {
-                def main(args: Array[String]) {
-                    val conf = new SparkConf().setAppName("Simple App")
-                    val sc = new SparkContext(conf)
-                }
-            }
-            </code></pre>
-			</section>
-			<section>
-				<h3>Resilient Distributed Dataset (RDD)</h3>
-				<p><i>"(...) a collection of elements partitioned across the nodes of the cluster that can be operated on in
-						parallel."</i></p>
-				<pre><code class="hljs" data-trim contenteditable>
-                val data = Array(1, 2, 3, 4, 5)
-                val data_rdd = sc.parallelize(data)
-            </code></pre>
-				<pre><code class="hljs" data-trim contenteditable>
-                val data_rdd = sc.textFile("data.txt")
-            </code></pre>
-				<aside class="notes">
-					A fault-tolerant collection of elements that can be operated on in parallel.
-				</aside>
-			</section>
+			<section data-transition="none">
+				<h3>How does the YOLO work?</h3>
+				<div>
+					<div class="leftContent2">
+						<img width="420" height="420" data-src="img/products_result_color.jpg">
+					</div>
+					<div class="rightContent2">
+						<p>In the last step, the threshold is applied</p>
+					</div>
+				</div>
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
