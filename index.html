@@ -23,6 +23,11 @@
 		document.getElementsByTagName('head')[0].appendChild(link);
 
 
+
+
+
+
+
     </script>
 </head>
 
@@ -463,6 +468,125 @@
                 </div>
             </div>
         </section>
+
+        <section>
+            <h3>Communication with AWS - used library</h3>
+            <ul>
+                <div class="small">
+                    <p class="fragment"><b>AWS IoT Device SDK for Python</b>
+                    <p>
+                </div>
+                <div class="small">
+                         <pre><code>
+class Communication:
+    def connect(self):
+        self.myAWSIoTMQTTClient.connect()
+
+    def subscribe(self, topic, callback):
+        self.myAWSIoTMQTTClient.subscribe(topic, 1, callback)
+
+    def publish(self, topic, message):
+        self.myAWSIoTMQTTClient.publish(topic, message, 1)
+  </code></pre>
+                </div>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Communication with AWS - message type</h3>
+            <ul>
+                <div class="small">
+                    <p class="fragment"><b>In MQTT topics json messages are published and subscribed</b>
+                    <p>
+                </div>
+                <div class="small">
+                         <pre><code>
+{
+   "RaspberryPI":{
+      "product_type":"productA"
+   }
+}
+  </code></pre>
+                </div>
+                <div class="small">
+                         <pre><code>
+{
+   "AWS":{
+      "recommendation":"productB"
+   }
+}
+  </code></pre>
+                </div>
+            </ul>
+        </section>
+
+        <section>
+            <h3>AWS IoT Core</h3>
+            <ul>
+                <li>
+                    <div class="small">
+                        <p class="fragment">Allows devices interact with cloud environment
+                        <p>
+                    </div>
+                </li>
+                <li>
+                    <div class="small">
+                        <p class="fragment">Supports bi-directional communication
+                        <p>
+                    </div>
+                </li>
+                <li>
+                    <div class="small">
+                        <p class="fragment">Support protocols: MQTT, HTTP, MQTT + WebSocket
+                        <p>
+                    </div>
+                </li>
+                <li>
+                    <div class="small">
+                        <p class="fragment">Serverless
+                        <p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>AWS Lambda</h3>
+            <ul>
+                <li>
+                    <div class="small">
+                        <p class="fragment">Run code without servers
+                        <p>
+                    </div>
+                </li>
+                <li>
+                    <div class="small">
+                        <p class="fragment">Triggers computation immediately
+                        <p>
+                    </div>
+                </li>
+                <li>
+                    <div class="small">
+                        <p class="fragment">Executes code only when needed
+                        <p>
+                    </div>
+                </li>
+                <li>
+                    <div class="small">
+                        <p class="fragment">Serverless
+                        <p>
+                    </div>
+                </li>
+                <li>
+                    <div class="small">
+                        <p class="fragment">Integration with Tensorflow
+                        <p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+
         <section>
             <h3>Future Work</h3>
             <ul>
@@ -516,6 +640,11 @@
 					}
 				]
 			});
+
+
+
+
+
 
 
     </script>
