@@ -40,7 +40,7 @@
     <div class="slides">
         <section>
             <h2>The smart shopping basket</h2>
-            <h4>A Case Study with deep learning, Intel Movidius and AWS</h4>
+            <h4>A Case Study with deep learning,</br>Intel Movidius and AWS</h4>
         </section>
         <!-- Introduction - online vs offline retailers-->
         <section>
@@ -119,9 +119,6 @@
         <section>
             <img width="600" height="310" data-src="img/tweet.png">
         </section>
-        <section data-background="#FFFFFF">
-            <img width="900" height="490" data-src="img/movidius_raspberry.png">
-        </section>
         <section>
             <h3>Bariers to moving AI to the Edge:</h3>
             <ul>
@@ -152,6 +149,9 @@
             </ul>
         </section>
         <section data-background="#FFFFFF">
+            <img width="900" height="490" data-src="img/movidius_raspberry.png">
+        </section>
+        <section data-background="#FFFFFF">
             <h3>Intel® Movidius™ Neural Compute Stick</h3>
             <div>
                 <div class="leftContent2">
@@ -166,22 +166,6 @@
             </aside>
         </section>
         <section data-background="#053d6f">
-            <h3>Intel® Movidius™ Myriad™ 2<br>Vision Processing Unit (VPU)﻿﻿</h3>
-            <div>
-                <div class="leftContent2">
-                    <div class="small">
-                        <p>
-                            As the industry's first always-on vision processor, this VPU delivers high-performance
-                            machine vision and visual awareness in severely power-constrained environments.
-                        </p>
-                    </div>
-                </div>
-                <div class="rightContent2">
-                    <img width="420" height="210" data-src="img/movidius_inside.png">
-                </div>
-            </div>
-        </section>
-        <section data-background="#053d6f">
             <h3>Intel® Movidius™ NCS - Key Features</h3>
             <ul>
                 <li>
@@ -193,12 +177,6 @@
                 <li>
                     <div class="small">
                         <p class="fragment">Unique design for vision and AI workloads
-                        <p>
-                    </div>
-                </li>
-                <li>
-                    <div class="small">
-                        <p class="fragment">12 programmable SHAVE cores
                         <p>
                     </div>
                 </li>
@@ -250,37 +228,7 @@
         </section>
         <section data-background="#053d6f">
             <h3>Intel® Movidius™ NCS - Key Capabilities</h3>
-            <div class="small">
-                <p class="fragment">Typical use cases:
-                <p>
-            </div>
             <div class="leftContent2">
-                <ul>
-                    <li>
-                        <div class="small">
-                            <p class="fragment">Smart home assistant
-                            <p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="small">
-                            <p class="fragment">Robot
-                            <p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="small">
-                            <p class="fragment">Smart mirror
-                            <p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="small">
-                            <p class="fragment">Smart drones
-                            <p>
-                        </div>
-                    </li>
-                </ul>
                 <div class="small">
                     <p class="fragment">Key Capabiities:
                     <p>
@@ -448,10 +396,18 @@
                 </div>
             </div>
         </section>
-
+        <section data-transition="none">
+            <h3>How we can train the YOLO algorithm?</h3>
+        </section>
         <section data-background="#000000" data-background-video="img/darknet.mov" data-background-size="contain">
         </section>
+        <section data-transition="none">
+            <h3>How to deploy a trained model</br>on Intel Movidius NCS?</h3>
+        </section>
         <section data-background="#000000" data-background-video="img/movidius.mov" data-background-size="contain">
+        </section>
+        <section data-transition="none">
+            <h3>How to evaluate the model</br>on Raspberry Pi?</h3>
         </section>
         <section data-background="#000000" data-background-video="img/raspberry.mov" data-background-size="contain">
         </section>
@@ -494,7 +450,6 @@
 
         <section>
             <h3>Communication with AWS - used library</h3>
-            <ul>
                 <div class="small">
                     <p class="fragment"><b>AWS IoT Device SDK for Python</b>
                     <p>
@@ -511,8 +466,7 @@ class Communication:
     def publish(self, topic, message):
         self.myAWSIoTMQTTClient.publish(topic, message, 1)
   </code></pre>
-                </div>
-            </ul>
+</div>
         </section>
 
 
@@ -578,7 +532,6 @@ class Communication:
 
         <section>
             <h3>Communication with AWS - Subscribe</h3>
-            <ul>
 
                 <div class="small">
                          <pre><code>
@@ -589,7 +542,6 @@ class Communication:
 }
   </code></pre>
                 </div>
-            </ul>
         </section>
 
         <section>
