@@ -39,3 +39,9 @@
 .small p {
     text-align: left;
     font-size: 0.8em; }
+
+body:after {
+    content: url(../img/logo.png);
+    position: fixed;
+    bottom: 50px;
+    left: 50px}
